@@ -20,7 +20,7 @@
     "build:dev": "npm run build && cp ./package.json ./build && cd ./build && yarn",
     "clean": "rm -rf build",
     "develop": "nodemon --exec \"npm run build:dev\"",
-    "prepare": "npm run clean && npm run build && node build/setup-package.js"
+    "prepare": "npm run clean && npm run build && node build/setup-package.js && cd build"
   },
   "dependencies": {
     "@sindresorhus/slugify": "1.1.0",
